@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main (void){
+    int x = 8678;
+    int a,b,c,d;
+    int sum = 1;
+
+    a = x % 10;
+    b = x / 10 % 10;
+    c = x / 100 % 10;
+    d = x / 1000 % 10;
+
+    printf ("x = %d\n",x);
+
+    if ( a ){
+        printf ("a = %d\n",a);
+    }
+
+    if ( b ){
+        sum = sum + 1;
+        printf ("b = %d\n",b);
+    }
+
+    if ( c ){
+        sum = sum + 1;
+        printf ("c = %d\n",c);
+    }
+    if ( d ){
+        sum = sum + 1;
+        printf ("d = %d\n",d);
+    }
+    printf ("sum = %d\n",sum);
+
+return 0;
+}

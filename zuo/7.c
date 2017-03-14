@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main (void){
+    int i;
+    int sum = 1;
+
+    for (i = 1; i < 10; i++){
+        sum = (sum + 1) * 2;
+        printf ("sum = %d\n",sum);
+    }
+    printf ("\n");
+    return 0;
+}
