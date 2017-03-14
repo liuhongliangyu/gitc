@@ -1,4 +1,4 @@
-## git
+# git
 
  1.什么是git?
   * git 是一个分布版本控制软件，最初目的是为了更好的管理Linux内核开发而设计，是目前世界上最先进的分布式控制系统。
@@ -145,8 +145,170 @@
 ![命令](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3364715791,2380613895&fm=23&gp=0.jpg)
 
 
-## MarkDown语法
+# MarkDown语法
 1.什么是MarkDown？
   * MarkDown 是一种轻量级标记语言，允许人们”使用易读易写的纯文本格式编辑文档，然后转换成有效的XHTML或者HTML文档“。
+## 标题
+使用#，可表示1-6级标题。
+```sh
+  # 表示一级标题
+  ## 表示二级标题
+  ### 表示三级标题
+  #### 表示四级标题
+  ##### 表示五级标题
+  ###### 表示六级标题
+```  
+效果：
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
 
+## 文字修饰符看一下粗体字，斜体字的标记。
+```sh
+ *This text will be italic*
+ _This will also ba italic_
+ 
+ **This text will be bold**
+ __This will also be bold__
+ 
+ ~~This text will be delete~~
+ _You **can**combine them_
+ ```
+ 效果：
+ 
+ *This text will be italic*
+ 
+ _This will also ba italic_
+ 
+ **This text will be bold**
+ 
+ __This will also be bold__
+ 
+ ~~This text will be delete~~
+ 
+ _You **can**combine them_
+ 
+ ## 列表
+ 
+ ### 无序列表
+ 
+ 主要使用'-'和'*'来标记无序列表
+ ```sh
+   - George Washington
+   - John Adams
+   * Thomas Jefferson
+ ```
+ 效果：
+- George Washington
+- John Adams
+* Thomas Jefferson
+
+## 有序列表
+ ```sh
+  1. Jamea Madidon
+  2. James Monroe
+  3. John Quincy Adams
+ ```
+效果：
+ 1. james Madiso
+ 2. James Monro
+ 3. John Quincy Adams
   
+  ```sh
+   1. James Madison
+   1. James Monroe
+   1. John Quincy Adams
+  ```
+效果：
+ 1. James Madison
+ 2. James Monroe
+ 3. John Quincy Adams
+
+```sh
+1. Make my changes
+  1. Fix bug
+  2. Improve formatting
+    * Make the headings bigger
+2. Push my commits to GitHub
+3. Open a pull request
+  * Describe my changes
+  * Mention all the members of my team
+    * Ask for feedback
+```
+效果：
+ 1. Make my changes
+ 2. Fix bug
+ 3. Improve formatting
+   * Make the headings bigger
+ 4. Push my commits to GitHub
+ 5. Open a pull request
+
+ * Describe my changes
+ * Mention all the members of my team
+   * Ask for feedback
+   
+## 任务列表
+```sh
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+```
+
+效果:
+ * [x] Finish my changes
+ * [ ] Push my commits to Github
+ * [ ] Open a pull request
+
+## 链接
+
+ [github](http://github.com)
+
+## 图片
+```sh
+If you want to embed images, this is how you do it:
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+```
+效果：
+
+If you want to embed images, this is how you do it:
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
+## 支持Emoji表情
+
+```sh
+  @octocat :+1: This PR looks great - it's ready to merge! :shipit:
+```
+效果：
+
+@octocat :+1: This PR looks great - it's ready to merge! :shipit:
+   * [Emoji表情](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
+   
+## 表格
+
+```sh
+标题 | 内容 | 备注
+-----|------|-----
+今天 | 很热 | 少穿
+昨天 | 下雨 | 打伞
+```
+效果：
+
+标题 | 内容 | 备注
+-----|------|-----
+今天 | 很热 | 少穿
+昨天 | 下雨 | 打伞
+
+## 常用
+一张图说明一切
+   * [图]（http://nts.newbieol.com/static/k6/git/markdown/images/markdown-cheatsheet.png）
+   
+# 参考文档
+
+* [维基百科，自由的百科全书 - Markdown](https://zh.wikipedia.org/wiki/Markdown)
+* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
