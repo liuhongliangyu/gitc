@@ -305,7 +305,7 @@ If you want to embed images, this is how you do it:
 
 ## 常用
 一张图说明一切
-   * [图]（http://nts.newbieol.com/static/k6/git/markdown/images/markdown-cheatsheet.png）
+   * [图](http://nts.newbieol.com/static/k6/git/markdown/images/markdown-cheatsheet.png)
    
 # 参考文档
 
