@@ -142,7 +142,7 @@
   $ git pull
 ```
 ## 常用命令
-  ![命令](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489557079885&di=caaa8c223f56f2d67b6d1260fb553250&imgtype=0&src=http%3A%2F%2Fpic.92to.com%2F2c%2F201606%2F26%2F2016032913410343.jpg)
+  ![命令](https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=git&step_word=&hs=0&pn=0&spn=0&di=190325035780&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=3364715791%2C2380613895&os=1222828878%2C1548280765&simid=3368731720%2C3301162518&adpicid=0&lpn=0&ln=1949&fr=&fmq=1489546920012_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&ist=&jit=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fpic.92to.com%2F2c%2F201606%2F26%2F2016032913410343.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bldp5_z%26e3Bv54AzdH3Fkwg25g2AzdH3Fda8mAzdH3Fa0-8dAzdH3Fb88db0m_z%26e3Bip4s&gsm=0&rpstart=0&rpnum=0)
 
 
 # MarkDown语法
