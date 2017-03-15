@@ -142,7 +142,7 @@
   $ git pull
 ```
 ## 常用命令
-![命令](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489507647930&di=f52767a541137e150fc0b2f3fc5dc7f9&imgtype=0&src=http%3A%2F%2Fpic.92to.com%2F2c%2F201606%2F26%2F2016032913410343.jpg)
+ ![命令](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489507647930&di=f52767a541137e150fc0b2f3fc5dc7f9&imgtype=0&src=http%3A%2F%2Fpic.92to.com%2F2c%2F201606%2F26%2F2016032913410343.jpg)
 
 
 # MarkDown语法
@@ -302,6 +302,25 @@ If you want to embed images, this is how you do it:
 -----|------|-----
 今天 | 很热 | 少穿
 昨天 | 下雨 | 打伞
+
+练习：
+
+学号 | 姓名 | 性别
+----|-----|-----
+001 | 姚 建 | 男
+002 | 师建伟 | 男
+003 | 申永哲 | 男
+004 | 武海强 | 男
+005 | 刘泓良 | 男
+006 | 赵 宏 | 男
+007 | 张 琨 | 男
+008 | 董俊峰 | 男
+009 | 姚宝山 | 男
+010 | 肖金红 | 女
+011 | 黄文倩 | 女
+012 | 陈鹏飞 | 男
+013 | 王晓伟 | 男
+014 | 马彩虹 | 女
 
 ## 常用
 一张图说明一切
