@@ -67,5 +67,5 @@
 
     sqlite> alter table oldname rename to newname;
 ## 参考文献
-  [](http://www.runoob.com/sqlite/sqlite-tutorial.html)
+  [SQLlite教程](http://www.runoob.com/sqlite/sqlite-tutorial.html)
   
