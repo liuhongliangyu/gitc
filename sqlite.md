@@ -66,3 +66,5 @@
 1. 修改表的名称
 
     sqlite> alter table oldname rename to newname;
+## 参考文献
+[网址](http://www.runoob.com/sqlite/sqlite-tutorial.html)
