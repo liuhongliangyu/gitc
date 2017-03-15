@@ -142,7 +142,7 @@
   $ git pull
 ```
 ## 常用命令
- ![命令](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489507647930&di=f52767a541137e150fc0b2f3fc5dc7f9&imgtype=0&src=http%3A%2F%2Fpic.92to.com%2F2c%2F201606%2F26%2F2016032913410343.jpg)
+ ![命令]
 
 
 # MarkDown语法
