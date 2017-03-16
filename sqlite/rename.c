@@ -7,7 +7,7 @@ int main (void){
   char buf[32];
   char direct[64] = "mv ";
 
-  while (fgets(buf, 32, stdin) != NULL){//用while循环，用fgets函数在标准输入流中每次读取32个字节存入buf内，直到函数流为空为止。
+  while (fgets(buf, 32, stdin) != NULL){//在while循环中，用fgets函数在标准输入流中每次读取32个字节存入buf内，直到函数流为空为止。
     buf [strlen(buf) - 1] = '\0';//在buf数组中加入结束符。strlen(buf)-1：用'\0'替代'\n'。
     //printf ("%s\n",buf);在第32为上加一个‘\0’，因为buf定义是空。
     // 创造mv xxx yyy的形式，system(mv xxx yyy)重命名
