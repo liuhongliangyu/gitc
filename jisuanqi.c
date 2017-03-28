@@ -1,7 +1,7 @@
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <sqlite3.h>
 #include "cgic.h"
 
 
@@ -9,14 +9,11 @@ void HandleSubmit();
 void ShowForm();
 void Name();
 void Age();
-void Id();
-int do_insert(sqlite3 *db);
-
+void Nation();
+void Gender();
+void Address();
 
 int cgiMain(void){
-
-  sqlite3 *db;
-	char *errmsg;
 
   cgiHeaderContentType("text/html");
   fprintf(cgiOut, "<html lang=\"en\">\n");
@@ -30,24 +27,6 @@ int cgiMain(void){
     fprintf(cgiOut, "<hr>\n");
   }
 
-  if (sqlite3_open("./db/my.db", &db) != SQLITE_OK)
-	{
-		printf("%s\n", sqlite3_errmsg(db));
-		return -1;
-	}
-
-	int ret;
-
-  if ((ret = sqlite3_exec(db, "create table stu(id, name, age)", NULL, NULL, &errmsg)) != SQLITE_OK)
-	{
-		if (ret == 1)
-		{
-			printf("%s\n", errmsg);
-			sqlite3_close(db);
-			return -1;
-		}
-	}
-
   ShowForm();
   fprintf(cgiOut, "</BODY></HTML>\n");
 
@@ -55,18 +34,12 @@ int cgiMain(void){
 }
 
 void HandleSubmit(){
-  Id();
   Name();
   Age();
-  do_insert(sqlite3 *db, int id, char * name, int age);
-}
+  Gender();
+  Nation();
+  Address();
 
-void Id(){
-  char id[81];
-  cgiFormString("id",id,81);
-  fprintf(cgiOut, "Id:");
-  cgiHtmlEscape(id);
-  fprintf(cgiOut, "<BR>\n");
 }
 
 void Name(){
@@ -84,7 +57,33 @@ void Age(){
   cgiHtmlEscape(age);
   fprintf(cgiOut, "<BR>\n");
 }
+char *gender[] = {
+  "men",
+  "women"
+};
+void Gender(){
+int genderChoice;
+cgiFormSelectSingle("gender",gender,2,&genderChoice,0);
+fprintf(cgiOut, "gender: %s<BR>\n", gender[genderChoice]);
 
+
+}
+
+void Nation(){
+char nation[64];
+cgiFormString("nation",nation,64);
+fprintf(cgiOut, "Nation: ");
+cgiHtmlEscape(nation);
+fprintf(cgiOut, "<br>\n");
+}
+
+void Address(){
+char address[241];
+cgiFormString("address",address,241);
+fprintf(cgiOut, "Address: ");
+cgiHtmlEscape(address);
+fprintf(cgiOut, "<br>");
+}
 
 void ShowForm(){
   fprintf(cgiOut, "<!--2.0:multipart/form-data is required for file uploads. -->");
@@ -95,34 +94,23 @@ void ShowForm(){
   fprintf(cgiOut, "<H2>\n");
   fprintf(cgiOut, "个人信息\n");
   fprintf(cgiOut, "</H2>\n");
-  fprintf(cgiOut, "Id<br><input type=\"text\"name=\"id\">\n");
-  fprintf(cgiOut, "<br>\n");
   fprintf(cgiOut, "Name<br><input type=\"text\"name=\"name\">\n");
   fprintf(cgiOut, "<br>\n");
   fprintf(cgiOut, "Age<br><input type=\"text\"name=\"age\">\n");
   fprintf(cgiOut, "<br>\n");
+  fprintf(cgiOut, "Nation<br><input type=\"text\"name=\"nation\">\n");
+  fprintf(cgiOut, "<br>\n");
+  fprintf(cgiOut, "Gender<br>men<input type=\"radio\"name=\"gender\">\n");
+  fprintf(cgiOut,"women<input type=\"radio\"name=\"gender\">\n");
+  fprintf(cgiOut, "<br>");
+  fprintf(cgiOut, "My Address<br><textarea name=\"address\"ROWS=4 COLS=40>\n");
+  fprintf(cgiOut, "</textarea>\n");
 
+  //  fprintf(cgiOut, "address\n");
+  //  fprintf(cgiOut, "<p>\n");
+  //  fprintf(cgiOut, "", );
   fprintf(cgiOut, "<BR>\n");
   fprintf(cgiOut, "<HR>\n");
   fprintf(cgiOut, "<input type=\"submit\" name=\"saveenvironment\" value=\"Save Environment\">\n");
   fprintf(cgiOut, "</form>\n");
-}
-
-int do_insert(sqlite3 *db)
-{
-	int id;
-	char name[32] = {0};
-	int age;
-	char sql[128] = {0};
-	char *errmsg;
-
-	sprintf(sql, "insert into stu values(%d, '%s', %d)", id, name, age);
-	if (sqlite3_exec(db, sql, NULL, NULL, &errmsg) != SQLITE_OK)
-	{
-		printf("%s\n", errmsg);
-		return -1;
-	}
-
-	printf("\e[32minsert OK !\e[0m\n");
-	return 0;
 }
