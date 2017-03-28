@@ -92,4 +92,4 @@ If you want to embed images,this is how do it:
 014 | 马彩虹 | 女
 
 ## 常用
-* [一张图说明一切](http://nts.newbieol.com/static/k6/git/markdown/images/markdown-cheatsheet.png)
+* [一张图说明一切](http://i1.piimg.com/1949/996b0db0f75b60e8s.jpg)
