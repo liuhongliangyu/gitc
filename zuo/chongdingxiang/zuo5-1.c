@@ -19,7 +19,7 @@ int main (void){
             }
             else {
                 putchar('%');
-                putchar(a);  
+                putchar(a);
                 status = 0;
             }
 
@@ -49,7 +49,7 @@ int main (void){
         }
         else if (status == 4){
             if (a == '4'){
-                putchar(' * ');
+                putchar('*');
             }
             else {
                 putchar('%');

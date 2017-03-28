@@ -3,7 +3,8 @@ int main(void){
     int x;
     int sum = 0;
     scanf("%d",&x);
-    for (; x != 0;){
+    //for (; x != 0;){
+    while (x != 0){
         x = x / 10;
         sum = sum + 1;
     }

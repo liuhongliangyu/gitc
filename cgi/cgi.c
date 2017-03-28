@@ -36,7 +36,7 @@ int main(void){
     printf ("fname = %ld\n",i * j);
   }
  if (k == 3){
-    printf ("fname = %ld\n",i / j);
+    printf ("fname = %.2lf\n",i * 1.0 / j);
   }
  if (k == 4){
     printf ("fname = %ld\n",i % j);

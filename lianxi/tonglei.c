@@ -1,4 +1,4 @@
- = #include <stdio.h>
+#include <stdio.h>
 int main (void){
     char c = 'c';//-128~127
     c = getchar();

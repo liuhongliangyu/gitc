@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>//输入一个数，求这个数上的每个位上的数字。
 int main (void){
     int x,a;
     scanf ("%d",&x);

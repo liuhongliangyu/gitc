@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>//数字逆向输出。
 int main (void){
     int a;
     scanf ("%d",&a);
